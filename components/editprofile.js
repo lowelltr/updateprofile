@@ -10,16 +10,16 @@ const editProfile={
                     <label>Bio</label>
                     <input type="text"ng-model="$ctrl.updateInfo.newBio">
                     <a href="#!/editProfile">
-                    <button ng-click="$ctrl.updateInfo($ctrl.updateInfo)">Update<button>
+                    <button ng-click="$ctrl.updateInfo($ctrl.updateInfo.newInfo)">Update<button>
                     </a>
             </form>
             `,
 
     controller: ["ProfileService", function(ProfileService) {
         const vm = this;
-        vm.info = ProfileService.getUserProfile();
+        vm.updateInfo = ProfileService.getUserProfile();
         vm.updateInfo = function (newInfo) {
-            vm.info = ProfileService.setUserProfile(newInfo);
+            vm.updateInfo = ProfileService.setUserProfile(newInfo);
         }
     }]
 }
