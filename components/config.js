@@ -13,7 +13,10 @@ that takes the named route as a parameter.*/
             <profile></profile>
             `
         })
-        .otherwise({
+        .otherwise("/profile", {
+            template: `
+            <profile></profile>
+            `
             
         })
 
