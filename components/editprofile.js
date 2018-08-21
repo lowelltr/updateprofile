@@ -1,7 +1,7 @@
 "use strict";
 const editProfile={
             template:`
-            <form ng-submit="$ctrl.update($ctrl.newInfo);">
+            <form>
                     <h1> Use the form below to update your profile.</h1>
                     <label>Name</label>
                     <input type="text"ng-model="$ctrl.newInfo.name" id="name">
@@ -10,8 +10,8 @@ const editProfile={
                     <label>Bio</label>
                     <input type="text"ng-model="$ctrl.newInfo.bio"id="bio">
                     <a href="#!/profile">
-                    <button>Update<button>
-                
+                    <button type="button" ng-click="$ctrl.update($ctrl.newInfo);">Update</button>
+                </a>     
             </form>
             `,
 
