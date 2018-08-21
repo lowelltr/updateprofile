@@ -12,7 +12,7 @@ const profile={
             <p id="bio">{{$ctrl.updateInfo.bio}}</p>
         </figcaption>
         <a href="#!/editProfile">
-            <button>Edit</button>
+            <button id ="edit">Edit</button>
         </a>
         </figure>
         
