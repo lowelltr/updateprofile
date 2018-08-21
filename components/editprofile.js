@@ -9,9 +9,9 @@ const editProfile={
                     <input type="text"ng-model="$ctrl.newInfo.contact" id="contact">
                     <label>Bio</label>
                     <input type="text"ng-model="$ctrl.newInfo.bio"id="bio">
+                    <a href="#!/profile">
                     <button>Update<button>
-                    <a href="#!/editProfile">
-                    </a>
+                
             </form>
             `,
 
