@@ -3,9 +3,6 @@
     font-family: "Work Sans";
     background: #eee;
 }
-  a:visited {
-    color:#5BECD8
-  }
   form {
     margin: 20px auto;
     padding: 10px;
@@ -49,9 +46,9 @@
     margin-left: 20px;
   }
   
-  update {
+  #update {
     width: 310px;
-    height: 60px;
+    height: 27px;
     font-size: 16px;
     border-radius: 20px;
     background-color: #505355;
@@ -59,14 +56,21 @@
     margin: 20px auto;
     text-align: center;
     outline: none;
+    font-family: "Work Sans";
+  }
+  #update:hover{
+    background-color:#5BECD8;
+  }
+  #header{
+    font-size: 125%;
+    padding-left: 23px;
   }
   
-  /* Profile */
-  
   figure {
-    height: 400px;
+    height: 460px;
     width: 325px;
     margin: 0 auto;
+    background: linear-gradient(180deg, #1ecefd 65%, #ffff 35%);
     color: #1ECEFD;
     font-family: 'Work Sans', sans-serif;
     border: 2px solid lightgray;
@@ -76,9 +80,14 @@
     Box-shadow: 0px 0px 10px 0px rgba(204,204,204,1);
 
   }
+  figcaption{
+    padding: 10px;
+
+  }
   
-  edit{
-    width: 280px;
+  #edit{
+    width: 263px;
+    height: 25px;
     font-size: 16px;
     border-radius: 20px;
     background-color:#505355;
@@ -86,28 +95,70 @@
     margin: 20px auto;
     outline: none;
     text-align: center;
+    margin-top: 0;
+    font-family: "Work Sans";
+
+  }
+  #edit:hover{
+    background-color:#5BECD8;
+  }
+  a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
   }
   
-  
-  
-  #name {
-    font-size: 24px;
-    color: #505355;
-    font-weight: 800;
-    margin-left: 20px;
-    margin-bottom: 5px;
-  }
-  
-  #contact {
+  #name1 {
     font-size: 14px;
     color: #505355;
+    font-weight: 700;
     margin-left: 20px;
-    margin-top: 0;
+    margin-bottom: 5px;
+    padding-left: 14px;
+    width: 288px;
+    height: 0px;
   }
   
-  #bio {
+  #contact2 {
+    font-size: 14px;
+    color: #505355;
+    font-weight: 700;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    padding-left: 14px;
+    width: 288px;
+    height: 0px;
+  }
+  
+  #bio3 {
     font-size: 14px;
     color: #505355;
     margin-left: 20px;
     margin-top: 5px;
+    width: 288px;
+    height: 36px;
+    font-weight: 700;
   }
+img{
+  border-radius: 50%;
+  width: 326px;
+  height: 290px;
+}
+#name{
+  color: #505355;
+  margin: 0;
+  padding:3px;
+}
+#contact{
+  color: #505355;
+  padding-left: 7px;
+
+}
+#bio{
+  color: #505355;
+  margin: 0;
+  padding: 7px;
+}
+p{
+  word-wrap: break-word;
+}

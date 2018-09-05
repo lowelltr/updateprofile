@@ -2,13 +2,13 @@
 const editProfile={
             template:`
             <form>
-                    <h1> Use the form below to update your profile.</h1>
+                    <h1 id="header"> Use the form below to update your profile.</h1>
                     <label class="info">Name</label>
-                    <input type="text"ng-model="$ctrl.newInfo.name" id="name">
+                    <input type="text"ng-model="$ctrl.newInfo.name" id="name1">
                     <label>Contact</label>
-                    <input type="text"ng-model="$ctrl.newInfo.contact" id="contact">
+                    <input type="text"ng-model="$ctrl.newInfo.contact" id="contact2">
                     <label>Bio</label>
-                    <input type="text"ng-model="$ctrl.newInfo.bio"id="bio">
+                    <input type="text"ng-model="$ctrl.newInfo.bio"id="bio2">
                     <a href="#!/profile">
                     <button type="button" id="update" ng-click="$ctrl.update($ctrl.newInfo);">Update</button>
                 </a>     
